@@ -5,7 +5,7 @@ FROM openjdk:11-jre-slim
 WORKDIR /app
 
 # Copy the JAR file from your host to the container
-COPY backend-ecom-0.0.1-SNAPSHOT.jar /app/ecom.jar
+COPY /var/lib/jenkins/workspace/Ecom/ECOM-BE/target/backend-ecom-0.0.1-SNAPSHOT.jar /app/ecom.jar
 
 # Expose the port that your application will listen on
 EXPOSE 8081
