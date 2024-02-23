@@ -5,7 +5,7 @@ FROM openjdk:11-jre-slim
 WORKDIR /app
 
 # Copy the JAR file from your host to the container
-COPY ecom.jar /app/ecom.jar
+COPY backend-ecom-0.0.1-SNAPSHOT.jar /app/ecom.jar
 
 # Expose the port that your application will listen on
 EXPOSE 8081
