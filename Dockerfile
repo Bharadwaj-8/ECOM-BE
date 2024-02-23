@@ -8,7 +8,7 @@ WORKDIR /app
 COPY ecom.jar /app/ecom.jar
 
 # Expose the port that your application will listen on
-EXPOSE 8181
+EXPOSE 8081
 
 # Define the command to run your Java application
 CMD ["java", "-jar", "ecom.jar"]
