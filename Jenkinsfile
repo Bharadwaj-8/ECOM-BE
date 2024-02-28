@@ -10,8 +10,8 @@ pipeline {
         IMAGE_REPO_NAME = 'jenkins-pipeline'
         IMAGE_TAG = 'v1'
         REPOSITORY_URI = 'public.ecr.aws/q3j7b1e0/testing'
-        AWS_ACCESS_KEY_ID = "${AWS Access Keys}"
-        AWS_SECRET_ACCESS_KEY = "${AWS Access Keys}"
+        AWS_ACCESS_KEY_ID = "${env.AWS_Access_Keys}"
+        AWS_SECRET_ACCESS_KEY = "${env.AWS_Access_Keys}"
     }
 
     
@@ -21,7 +21,7 @@ pipeline {
          stage('Logging into AWS ECR') {
             steps {
                 script {
-                sh "${Logging into ECR}"
+                sh "${env.Logging_into_ECR}"
                 }
                  
             }
