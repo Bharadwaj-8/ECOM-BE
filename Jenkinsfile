@@ -9,7 +9,7 @@ pipeline {
         AWS_DEFAULT_REGION = 'ap-south-1'
         IMAGE_REPO_NAME = 'jenkins-pipeline'
         IMAGE_TAG = 'v1'
-        REPOSITORY_URI = 'public.ecr.aws/q3j7b1e0/testing'
+        REPOSITORY_URI = "${env.REPOSITORY_URI}"
         AWS_ACCESS_KEY_ID = "${env.AWS_Access_Keys}"
         AWS_SECRET_ACCESS_KEY = "${env.AWS_Access_Keys}"
     }
