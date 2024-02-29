@@ -29,7 +29,7 @@ pipeline {
         
         stage('Cloning Git') {
             steps {
-                checkout([$class: 'GitSCM', branches: [[name: '*/staging']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: '', url: 'https://github.com/Bharadwaj-8/ECOM-BE.git']]])     
+                checkout([$class: 'GitSCM', branches: [[name: '*/staging']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: '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', url: 'https://github.com/Bharadwaj-8/ECOM-BE.git']]])     
             }
         }
   
